@@ -1,15 +1,31 @@
 .radio {
+	margin-right: 10px;
+	/*margin-bottom: 20px;*/
 }
 
 .radio::before {
 }
 
-
 .radio:checked::before {
 }
 
 .label {
+	display: flex;
+
+	align-items: center;
+	margin-bottom: 10px;
+	/*flex-direction: column;*/
 }
 
 .options {
+	margin-left: 110px;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
 }
