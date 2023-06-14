@@ -1,23 +1,48 @@
+.container {
+	font-family: 'Roboto';
+	font-size: 14px;
+	line-height: 16px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+}
+
 .item {
+	height: 45px;
+	border-bottom: 1px solid #e5e5e5;
+	font-weight: bolder;
 }
 
 .item:last-of-type {
 }
 
-.users {
-}
-
 .buttonsContainer {
+	width: 90%;
+
+	padding-left: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-end;
 }
 
-.container {
+.users {
+	display: inline-block;
+	border-collapse: collapse;
 }
 
 .thead {
-}
-
-.nameCol {
+	background: #e5e5e5;
+	width: 600px;
+	height: 35px;
+	font-weight: bolder;
 }
 
 .ageCol {
+	width: 100%;
+}
+
+.nameCol {
+	padding-left: 15px;
+	padding-right: 200px;
+	font-weight: normal;
 }

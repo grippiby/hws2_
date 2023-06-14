@@ -40,7 +40,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
 		if (onChangeOption) {
 			onChangeOption(e.currentTarget.value)
 		}
-		console.log(e.currentTarget.checked)
+		/*console.log(e.currentTarget.checked)*/
 		/*console.log(e.target)*/
 	}
 
@@ -58,7 +58,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
 						// name, checked, value делают студенты
 						name={name}
 						value={o.id}
-						checked={value == +o.id}
+						checked={Number(value) === o.id}
 						onChange={onChangeCallback}
 						{...restProps}
 					/>
