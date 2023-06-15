@@ -18,7 +18,7 @@ export const homeWorkReducer = (
 			if (action.payload === 'down') {
 				return state.sort((a, b) => b.name.localeCompare(a.name))
 			}
-			return [...state] // need to fix
+			return state
 		}
 		case 'check': {
 			return state.filter((el) => el.age > action.payload) // need to fix
