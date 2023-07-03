@@ -24,6 +24,7 @@ function HW11() {
 			}
 		} else {
 			const [value1, value2] = value
+			/*console.log(value1, value2)*/
 			setValue1(value1)
 			setValue2(value2)
 		}
