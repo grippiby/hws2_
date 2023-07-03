@@ -1,19 +1,20 @@
 .container {
-	/*	max-width: 300px;
+    border: 1px solid #000;
+    /*	max-width: 300px;
     
         display: flex;
         flex-direction: column;*/
-	/*	flex-wrap: nowrap;*/
+    /*	flex-wrap: nowrap;*/
 }
 
 .wrapper {
-	/*	width: 300px;
+    /*	width: 300px;
         display: flex;
         gap: 20px;*/
 }
 
 .number {
-	/*	width: 10px;
+    /*	width: 10px;
         height: 20px;
         padding: 5px 0;
         font-family: 'Montserrat', sans-serif;
