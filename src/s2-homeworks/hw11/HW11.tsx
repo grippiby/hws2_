@@ -18,13 +18,14 @@ function HW11() {
 	)
 
 	const change = (event: Event, value: number | number[]) => {
-		if (Array.isArray(value)) {
+		if (!Array.isArray(value)) {
+			if (value2 > value) {
+				setValue1(value)
+			}
+		} else {
 			const [value1, value2] = value
-
 			setValue1(value1)
 			setValue2(value2)
-		} else {
-			setValue1(value)
 		}
 
 		// пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
@@ -44,7 +45,6 @@ function HW11() {
 							id={'hw11-single-slider'}
 							onChange={change}
 							value={value1}
-							step={1}
 							valueLabelDisplay="auto"
 							// сделать так чтоб value1 изменялось // пишет студент
 						/>
@@ -58,7 +58,6 @@ function HW11() {
 							value={[value1, value2]}
 							onChange={change}
 							disableSwap
-
 							// сделать так чтоб value1/2 изменялось // пишет студент
 						/>
 						<span id={'hw11-value-2'} className={s.number}>
