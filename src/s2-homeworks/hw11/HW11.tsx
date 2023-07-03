@@ -28,15 +28,23 @@ function HW11() {
 				setValue1(value1)
 				setValue2(value2)
 			}*/
-		if (Array.isArray(value)) {
-			//	const [value1, value2] = value
+		/*	if (Array.isArray(value)) {
+				//	const [value1, value2] = value
+				setValue1(value[0])
+				setValue2(value[1])
+			} else {
+				if (value2 > value) {
+					setValue1(value)
+				}
+			}*/
+
+		if (value instanceof Array) {
 			setValue1(value[0])
 			setValue2(value[1])
 		} else {
-			if (value2 > value) {
-				setValue1(value)
-			}
+			setValue1(value)
 		}
+
 		// пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
 	}
 
@@ -64,9 +72,9 @@ function HW11() {
 						</span>
 						<SuperRange
 							id={'hw11-double-slider'}
-							value={[value1, value2]}
 							onChange={change}
-							disableSwap
+							/*disableSwap*/
+							value={[value1, value2]}
 							// сделать так чтоб value1/2 изменялось // пишет студент
 						/>
 						<span id={'hw11-value-2'} className={s.number}>
