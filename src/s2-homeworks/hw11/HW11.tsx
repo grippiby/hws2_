@@ -18,33 +18,27 @@ function HW11() {
 	)
 
 	const change = (event: Event, value: number | number[]) => {
-		/*	if (!Array.isArray(value)) {
-				if (value2 > value) {
-					setValue1(value)
-				}
-			} else {
-				const [value1, value2] = value
-				/!*console.log(value1, value2)*!/
-				setValue1(value1)
-				setValue2(value2)
-			}*/
-		/*	if (Array.isArray(value)) {
-				//	const [value1, value2] = value
+		//вариант раз
+
+		if (Array.isArray(value)) {
+			const [value1, value2] = value
+			console.log('рабочий вариант', value1, value2)
+			setValue1(value1)
+			setValue2(value2)
+		} else {
+			if (value2 >= value) {
+				setValue1(value)
+			}
+			return
+		}
+		//Вариант 2
+		/*	if (value instanceof Array) {
+				console.log('рабочий вариант', value[0], value[1])
 				setValue1(value[0])
 				setValue2(value[1])
 			} else {
-				if (value2 > value) {
-					setValue1(value)
-				}
+				setValue1(value)
 			}*/
-
-		if (value instanceof Array) {
-			setValue1(value[0])
-			setValue2(value[1])
-		} else {
-			setValue1(value)
-		}
-
 		// пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
 	}
 
