@@ -19,7 +19,6 @@ function HW11() {
 
 	const change = (event: Event, value: number | number[]) => {
 		//вариант раз
-
 		if (Array.isArray(value)) {
 			const [value1, value2] = value
 			console.log('рабочий вариант', value1, value2)
@@ -29,7 +28,6 @@ function HW11() {
 			if (value2 >= value) {
 				setValue1(value)
 			}
-			return
 		}
 		//Вариант 2
 		/*	if (value instanceof Array) {
