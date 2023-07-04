@@ -1,24 +1,22 @@
 .container {
-    border: 1px solid #000;
-    /*	max-width: 300px;
-    
-        display: flex;
-        flex-direction: column;*/
-    /*	flex-wrap: nowrap;*/
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
 
 .wrapper {
-    /*	width: 300px;
-        display: flex;
-        gap: 20px;*/
+	width: 300px;
+	display: flex;
+	gap: 20px;
 }
 
 .number {
-    /*	width: 10px;
-        height: 20px;
-        padding: 5px 0;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 20px;*/
+	width: 10px;
+	height: 20px;
+	padding: 5px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
 }

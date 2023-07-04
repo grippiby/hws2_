@@ -21,7 +21,6 @@ function HW11() {
 		//вариант раз
 		if (Array.isArray(value)) {
 			const [value1, value2] = value
-			console.log('рабочий вариант', value1, value2)
 			setValue1(value1)
 			setValue2(value2)
 		} else {
@@ -29,14 +28,7 @@ function HW11() {
 				setValue1(value)
 			}
 		}
-		//Вариант 2
-		/*	if (value instanceof Array) {
-				console.log('рабочий вариант', value[0], value[1])
-				setValue1(value[0])
-				setValue2(value[1])
-			} else {
-				setValue1(value)
-			}*/
+
 		// пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
 	}
 
@@ -65,7 +57,8 @@ function HW11() {
 						<SuperRange
 							id={'hw11-double-slider'}
 							onChange={change}
-							disableSwap
+							//выдавал багу при проверке ДЗ
+							/*		disableSwap*/
 							value={[value1, value2]}
 							// сделать так чтоб value1/2 изменялось // пишет студент
 						/>
