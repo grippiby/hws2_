@@ -65,7 +65,7 @@ function HW11() {
 						<SuperRange
 							id={'hw11-double-slider'}
 							onChange={change}
-							/*disableSwap*/
+							disableSwap
 							value={[value1, value2]}
 							// сделать так чтоб value1/2 изменялось // пишет студент
 						/>
