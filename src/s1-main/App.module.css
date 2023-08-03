@@ -8,7 +8,7 @@
 	min-height: 250px;
 	max-width: 1280px;
 	height: auto;
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.11);
 	padding: 20px 70px;
 	border-top: 1px solid #d9d9d9;
 	border-bottom: 1px solid #d9d9d9;
