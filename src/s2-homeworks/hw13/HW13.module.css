@@ -1,22 +1,42 @@
 .buttonsContainer {
+	display: flex;
+	gap: 15px;
+	padding-bottom: 20px;
 }
 
 .responseContainer {
+	display: flex;
+	gap: 5%;
+	padding: 0 5%;
 }
 
 .imageContainer {
+	max-width: 60%;
 }
 
 .image {
+	width: 100%;
 }
 
-.textContainer{
+.textContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #000;
+	font-family: Montserrat;
+	font-style: normal;
+	line-height: normal;
+	font-size: 1rem;
+	font-weight: 500;
 }
 
 .code {
+	font-size: 1.875rem;
+	padding-bottom: 1%;
 }
 
 .text {
 }
+
 .info {
 }
