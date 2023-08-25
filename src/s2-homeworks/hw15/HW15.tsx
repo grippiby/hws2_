@@ -5,7 +5,7 @@ import axios from 'axios'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import { useSearchParams } from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
-
+import { Backdrop, CircularProgress } from '@mui/material'
 /*
  * 1 - дописать SuperPagination
  * 2 - дописать SuperSort
@@ -125,7 +125,15 @@ const HW15 = () => {
 			<div className={s2.hw}>
 				{idLoading && (
 					<div id={'hw15-loading'} className={s.loading}>
-						Loading...
+						<Backdrop
+							sx={{
+								color: 'lightgray',
+								zIndex: (theme) => theme.zIndex.drawer + 1,
+							}}
+							open={idLoading}
+						>
+							<CircularProgress color="primary" size={100} />
+						</Backdrop>
 					</div>
 				)}
 

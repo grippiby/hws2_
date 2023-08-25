@@ -3,7 +3,8 @@
 }
 
 .hw {
-	border-bottom: 1px solid #d9d9d9;
+	font-family: Roboto;
+
 	min-width: 720px;
 	min-height: 250px;
 	max-width: 1280px;
